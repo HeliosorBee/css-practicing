@@ -4,7 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inline CSS</title>
+    <title>Testing Cascading</title>
+    <style>
+      body {
+        /* styled the body tag */
+        background-color: #f5f5ff;
+        color: mediumslateblue;
+      }
+      /* styles all h1 tags */
+      h1 {
+        text-align: right;
+        font-size: 40px;
+      }
+      /* styles all p tags */
+      p {
+        font-size: 24px;
+      }
+    </style>
   </head>
   <!--
     in the body tag, we use the style attribute to add CSS (Cascading Sytle Sheets) properties
@@ -15,7 +31,7 @@
     we also change the font color using the color property to the color midnightblue, which is
     built in to CSS.
   -->
-  <body style="background-color: #f5f5ff; color: midnightblue">
+  <body style="color: darkmagenta">
     <nav>
       <ul>
         <li><a href="index.html">Inline CSS</a></li>
@@ -29,13 +45,13 @@
        - Make align the text to center.
        - Increase the font size to 40 pixels.
     -->
-      <h1 style="text-align: center; font-size: 40px">Inline CSS</h1>
+      <h1 style="text-align: center; font-size: 40px">Testing Cascading</h1>
 
       <!--
       demonstraights inline CSS in the p tag making the font size 24 pixels.
     -->
       <p style="font-size: 24px">
-        This page shows the effects of adding inline CSS to HTML tag.
+        This page shows the effects of testing cascading.
       </p>
 
       <p>Does this paragraph have the same styling as my other paragraph?</p>
