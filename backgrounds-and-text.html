@@ -4,8 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Typography</title>
+    <title>Backgrounds and texts</title>
     <link rel="stylesheet" href="stylesheet/main.css" />
+    <style>
+      body {
+        background-image: url(https://wallpaperaccess.com/full/8053765.png);
+      }
+      h1 {
+        font-weight: bold;
+        background-color: #ededed;
+
+        color: #d1913c;
+        text-shadow: #212121 1.5cm;
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -38,7 +50,7 @@
     </nav>
 
     <main>
-      <h1>Typography</h1>
+      <h1>Backgrounds and Text</h1>
 
       <!--
         NOTE: not porper use of the div tage, due to the lack of proper semantic tags.
@@ -47,27 +59,9 @@
         like a container for multiple block elements.
       -->
       <div>
-        <p>This page shows the different classes and ids in CSS.</p>
+        <p>This page shows a background image</p>
 
         <p>Does this paragraph have the same styling as my other paragraph?</p>
-
-        <!--
-          this is a span, an inline element used to group several
-          inline elements. used to style specific words or sets of words 
-          other html elements, which is how it is being used in this context.
-        -->
-        <p id="styled-by-id" style="font-weight: bold">
-          This paragraph will show the effect of giving an element an ID and
-
-          <span>styling</span> that ID.
-        </p>
-
-        <!--
-          This is an example of the letter-spacing style tag
-        -->
-        <p style="letter-spacing: 1cm">ahhhh</p>
-
-        <p>EHE</p>
       </div>
     </main>
   </body>

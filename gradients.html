@@ -4,8 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Typography</title>
+    <title>Gradients</title>
     <link rel="stylesheet" href="stylesheet/main.css" />
+    <style>
+      body {
+        background: #355c7d; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #c06c84,
+          #6c5b7b,
+          #355c7d
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #c06c84,
+          #6c5b7b,
+          #355c7d
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+      h1 {
+        background-color: #ededed;
+        color: #212121;
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -38,7 +59,7 @@
     </nav>
 
     <main>
-      <h1>Typography</h1>
+      <h1>Gradients</h1>
 
       <!--
         NOTE: not porper use of the div tage, due to the lack of proper semantic tags.
@@ -47,27 +68,9 @@
         like a container for multiple block elements.
       -->
       <div>
-        <p>This page shows the different classes and ids in CSS.</p>
+        <p>This page shows gradients</p>
 
-        <p>Does this paragraph have the same styling as my other paragraph?</p>
-
-        <!--
-          this is a span, an inline element used to group several
-          inline elements. used to style specific words or sets of words 
-          other html elements, which is how it is being used in this context.
-        -->
-        <p id="styled-by-id" style="font-weight: bold">
-          This paragraph will show the effect of giving an element an ID and
-
-          <span>styling</span> that ID.
-        </p>
-
-        <!--
-          This is an example of the letter-spacing style tag
-        -->
-        <p style="letter-spacing: 1cm">ahhhh</p>
-
-        <p>EHE</p>
+        <p>i like this gradient</p>
       </div>
     </main>
   </body>
