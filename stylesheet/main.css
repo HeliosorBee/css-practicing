@@ -60,3 +60,60 @@ span {
   text-decoration: underline;
   font-style: italic;
 }
+
+#back-to-top {
+  /*
+  we change display to a flexbox so we can center text
+  inside anchor horizontally & vertically
+  */
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+
+  /*
+  fix position of Back to Top button
+  to bttm right corner of web page & make it
+  follow users scrolling
+  */
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+
+  width: 80px;
+  height: 80px;
+
+  /*
+  this allows us to center our content horizontally in the 
+  Back to Top anchor. - Mr. Hardmen
+  */
+  -ms-flex-pack: center;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+
+  -ms-flex-align: center;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+  border: #121212 solid 2px;
+
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+
+  background: -o-radial-gradient(#eaafc8, #654ea3);
+  background: -moz-radial-gradient(#eaafc8, #654ea3);
+  background: -webkit-radial-gradient(#eaafc8, #654ea3);
+  background: radial-gradient(#eaafc8, #654ea3);
+
+  color: #313131;
+
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+}
