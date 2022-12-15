@@ -7,28 +7,70 @@
     <title>Gradients</title>
     <link rel="stylesheet" href="stylesheet/main.css" />
     <style>
+      /*
+      makes things scroll nicely
+      */
+      html {
+        scroll-behavior: smooth;
+      }
+
       body {
-        background: #355c7d; /* fallback for old browsers */
+        background: #ededed;
+        margin: 0;
+      }
+
+      nav {
+        padding: 10px;
+
+        /* 
+          This is gradients in a polygonal area.
+
+          1st parameter is the direction of the linear gradient, 
+          can be to the top, bottom, left, right, top-left, bottom-right, ect.
+          can also be a specific degree amount, example: 60deg.
+
+          X parameters are the colors to show in gradient.
+          */
+        background: #654ea3; /* fallback for old browsers */
         background: -webkit-linear-gradient(
           to right,
-          #c06c84,
-          #6c5b7b,
-          #355c7d
+          #eaafc8,
+          #654ea3
         ); /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(
           to right,
-          #c06c84,
-          #6c5b7b,
-          #355c7d
+          #eaafc8,
+          #654ea3
         ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       }
+
       h1 {
+        padding: 15.5px;
+
         background-color: #ededed;
         color: #212121;
       }
+
+      div {
+        background: #fbd3e9; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #bb377d,
+          #fbd3e9
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #bb377d,
+          #fbd3e9
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+
+      div p {
+        color: #ededed;
+      }
     </style>
   </head>
-  <body>
+  <body id="top">
     <nav>
       <ul>
         <li>
@@ -55,6 +97,7 @@
           </a>
         </li>
         <li><a href="gradients.html" class="nav-link">Gradients</a></li>
+        <li><a href="transforms.html" class="nav-link">Transforms</a></li>
       </ul>
     </nav>
 
@@ -72,6 +115,95 @@
 
         <p>i like this gradient</p>
       </div>
+      <br />
+      <div>
+        <p>This page shows gradients</p>
+
+        <p>i like this gradient</p>
+      </div>
+      <br />
+      <div>
+        <p>This page shows gradients</p>
+
+        <p>i like this gradient</p>
+      </div>
+      <br />
+      <div>
+        <p>This page shows gradients</p>
+
+        <p>i like this gradient</p>
+      </div>
+      <br />
+      <div>
+        <p>This page shows gradients</p>
+
+        <p>i like this gradient</p>
+      </div>
+      <br />
+      <div>
+        <p>This page shows gradients</p>
+
+        <p>i like this gradient</p>
+      </div>
+      <br />
+      <div>
+        <p>This page shows gradients</p>
+
+        <p>i like this gradient</p>
+      </div>
+      <br />
+      <div>
+        <p>This page shows gradients</p>
+
+        <p>i like this gradient</p>
+      </div>
+      <br />
+      <div>
+        <p>This page shows gradients</p>
+
+        <p>i like this gradient</p>
+      </div>
+      <br />
+      <div>
+        <p>This page shows gradients</p>
+
+        <p>i like this gradient</p>
+      </div>
+      <br />
+      <div>
+        <p>This page shows gradients</p>
+
+        <p>i like this gradient</p>
+      </div>
+      <br />
+      <div>
+        <p>This page shows gradients</p>
+
+        <p>i like this gradient</p>
+      </div>
+      <br />
+      <div>
+        <p>This page shows gradients</p>
+
+        <p>i like this gradient</p>
+      </div>
+      <br />
+      <div>
+        <p>This page shows gradients</p>
+
+        <p>i like this gradient</p>
+      </div>
+      <br />
+      <div>
+        <p>This page shows gradients</p>
+
+        <p>i like this gradient</p>
+      </div>
+
+      <a href="#top" id="back-to-top">
+        Back <br />
+        to Top
+      </a>
     </main>
   </body>
 </html>
