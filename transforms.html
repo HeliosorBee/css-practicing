@@ -119,6 +119,31 @@
 
         /* height: 300px; */
       }
+
+      .loader {
+        margin-top: 50px;
+        border-radius: 50%;
+        width: 30px;
+        height: 50px;
+        animation: jump 1.5s ease-out infinite alternate;
+        background: linear-gradient(
+          to bottom,
+          #cb60b3 0%,
+          #c146a1 50%,
+          #a80077 51%,
+          #db36a4 100%
+        );
+      }
+      @keyframes jump {
+        from {
+          transform: translateY(0px) rotate(0deg) scale(1, 1);
+          opacity: 1;
+        }
+        to {
+          transform: translateY(-50px) rotate(360deg) scale(0.8, 0.8);
+          opacity: 0.8;
+        }
+      }
     </style>
   </head>
   <body id="top">
@@ -149,6 +174,11 @@
         </li>
         <li><a href="gradients.html" class="nav-link">Gradients</a></li>
         <li><a href="transforms.html" class="nav-link">Transforms</a></li>
+        <li>
+          <a href="transitions-and-animations.html" class="nav-link">
+            Transitions and Animations
+          </a>
+        </li>
       </ul>
     </nav>
 
@@ -161,6 +191,7 @@
         this is a div, which is short ofor division. it is a block element that acts
         like a container for multiple block elements.
       -->
+
       <div>
         <p>This page shows gradients</p>
 
@@ -168,6 +199,7 @@
       </div>
       <br />
       <div class="row">
+        <div class="loader"></div>
         <div
           class="rotations"
           style="transform: scale(0.5) translate(-100%, -100%)">
