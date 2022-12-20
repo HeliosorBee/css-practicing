@@ -15,8 +15,40 @@
       }
 
       body {
+        /*Part 1*/
+        display: inline-block;
+
         background: #ededed;
         margin: 0;
+
+        opacity: 0;
+        transform: translateY(-100px);
+
+        -o-animation: fade-in 0.5s ease-in 1s forwards;
+        -moz-animation: fade-in 0.5s ease-in 1s forwards;
+        -webkit-animation: fade-in 0.5s ease-in 1s forwards;
+        animation: fade-in 0.5s ease-in 1s forwards;
+      }
+
+      /*
+      the animation itself. used to create animation and to make it work
+      we address th eanimation property(i.e., fade-in)
+
+      "from " is how the animations start
+
+      "to" is leading the animations to the end
+
+      its possible to define %s for styling
+      */
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+          transform: translateY(-100px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
 
       nav {
@@ -52,6 +84,14 @@
       }
 
       div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        width: 80%;
+
         background: #fbd3e9; /* fallback for old browsers */
         background: -webkit-linear-gradient(
           to right,
@@ -68,6 +108,28 @@
       div p {
         color: #ededed;
       }
+
+      section {
+        position: relative;
+
+        width: 25%;
+
+        float: left;
+
+        margin: 20px;
+        margin-right: 2.5%;
+
+        background-color: #654ea3;
+        height: 50vh;
+
+        border-radius: 20px;
+      }
+
+      #cleared {
+        /* unwanted floating thing that shouldn't be floating?
+        use the "clear" element.*/
+        clear: left;
+      }
     </style>
   </head>
   <body id="top">
@@ -81,8 +143,8 @@
         </li>
         <li>
           <a href="testing-cascading.html" class="nav-link">
-            Testing Cascading</a
-          >
+            Testing Cascading
+          </a>
         </li>
         <li>
           <a href="classes-and-ids.html" class="nav-link">Classes and IDs</a>
@@ -103,6 +165,7 @@
             Transitions and Animations
           </a>
         </li>
+        <li><a href="positioning.html" class="nav-link">Positioning</a></li>
       </ul>
     </nav>
 
@@ -115,95 +178,115 @@
         this is a div, which is short ofor division. it is a block element that acts
         like a container for multiple block elements.
       -->
-      <div>
-        <p>This page shows gradients</p>
+      <section>
+        <div>
+          <p>This page shows gradients</p>
 
-        <p>i like this gradient</p>
-      </div>
-      <br />
-      <div>
-        <p>This page shows gradients</p>
+          <p>i like this gradient</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>This page shows gradients</p>
 
-        <p>i like this gradient</p>
-      </div>
-      <br />
-      <div>
-        <p>This page shows gradients</p>
+          <p>i like this gradient</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>This page shows gradients</p>
 
-        <p>i like this gradient</p>
-      </div>
-      <br />
-      <div>
-        <p>This page shows gradients</p>
+          <p>i like this gradient</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>This page shows gradients</p>
 
-        <p>i like this gradient</p>
-      </div>
-      <br />
-      <div>
-        <p>This page shows gradients</p>
+          <p>i like this gradient</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>This page shows gradients</p>
 
-        <p>i like this gradient</p>
-      </div>
-      <br />
-      <div>
-        <p>This page shows gradients</p>
+          <p>i like this gradient</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>This page shows gradients</p>
 
-        <p>i like this gradient</p>
-      </div>
-      <br />
-      <div>
-        <p>This page shows gradients</p>
+          <p>i like this gradient</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>This page shows gradients</p>
 
-        <p>i like this gradient</p>
-      </div>
-      <br />
-      <div>
-        <p>This page shows gradients</p>
+          <p>i like this gradient</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>This page shows gradients</p>
 
-        <p>i like this gradient</p>
-      </div>
-      <br />
-      <div>
-        <p>This page shows gradients</p>
+          <p>i like this gradient</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>This page shows gradients</p>
 
-        <p>i like this gradient</p>
-      </div>
-      <br />
-      <div>
-        <p>This page shows gradients</p>
+          <p>i like this gradient</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>This page shows gradients</p>
 
-        <p>i like this gradient</p>
-      </div>
-      <br />
-      <div>
-        <p>This page shows gradients</p>
+          <p>i like this gradient</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>This page shows gradients</p>
 
-        <p>i like this gradient</p>
-      </div>
-      <br />
-      <div>
-        <p>This page shows gradients</p>
+          <p>i like this gradient</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>This page shows gradients</p>
 
-        <p>i like this gradient</p>
-      </div>
-      <br />
-      <div>
-        <p>This page shows gradients</p>
+          <p>i like this gradient</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>This page shows gradients</p>
 
-        <p>i like this gradient</p>
-      </div>
-      <br />
-      <div>
-        <p>This page shows gradients</p>
+          <p>i like this gradient</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>This page shows gradients</p>
 
-        <p>i like this gradient</p>
-      </div>
-      <br />
-      <div>
-        <p>This page shows gradients</p>
+          <p>i like this gradient</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>This page shows gradients</p>
 
-        <p>i like this gradient</p>
-      </div>
+          <p>i like this gradient</p>
+        </div>
+      </section>
+
+      <p id="cleared">
+        This element should not be beside the other boxes lolol
+      </p>
 
       <a href="#top" id="back-to-top">
         Back <br />
