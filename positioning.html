@@ -19,39 +19,59 @@
         margin: 0;
       }
 
-      nav {
-        padding: 10px;
+      /* nav {
+        position: relative;
+      } */
 
-        /* 
-          This is gradients in a polygonal area.
+      /* position sticky, styles h1 to have skity.
+      works like relative, staying in usual flow of web
+      until user scrolls down to scrol position definded by
+      any four css properties.
+      
+      meaning heading will stay in it's place even if you 
+      scroll down */
+      h1 {
+        position: sticky;
 
-          1st parameter is the direction of the linear gradient, 
-          can be to the top, bottom, left, right, top-left, bottom-right, ect.
-          can also be a specific degree amount, example: 60deg.
+        top: 0;
 
-          X parameters are the colors to show in gradient.
-          */
-        background: #654ea3; /* fallback for old browsers */
-        background: -webkit-linear-gradient(
-          to right,
-          #eaafc8,
-          #654ea3
-        ); /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(
-          to right,
-          #eaafc8,
-          #654ea3
-        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        /* z-index is like canva image positioning.
+        depending on the layer or the number used the
+        lower numbers will remain below, and higher
+        numbers will be shown above. 
+        
+        NOTE: only works on positioned elements (not static) */
+        z-index: 2;
       }
 
-      h1 {
-        padding: 15.5px;
+      section {
+        /* styles section to look usual web flow,
+        if we so choose the element can shift using
+        the four css properties. */
+        position: relative;
+
+        margin: 20px;
 
         background-color: #ededed;
-        color: #212121;
+        height: 50vh;
+
+        border-radius: 20px;
+      }
+
+      section:first-of-type {
+        /* styles first section tag to do these things */
+        top: 100px;
+        left: 150px;
+
+        border-radius: 10px #212121;
+
+        z-index: 1;
       }
 
       div {
+        /* positioned alike to its nearest parent tag. */
+        position: absolute;
+
         background: #fbd3e9; /* fallback for old browsers */
         background: -webkit-linear-gradient(
           to right,
@@ -108,7 +128,7 @@
     </nav>
 
     <main>
-      <h1>Gradients</h1>
+      <h1>Positioning</h1>
 
       <!--
         NOTE: not porper use of the div tage, due to the lack of proper semantic tags.
@@ -116,95 +136,76 @@
         this is a div, which is short ofor division. it is a block element that acts
         like a container for multiple block elements.
       -->
-      <div>
-        <p>This page shows gradients</p>
+      <section>
+        <div>
+          <p>This page shows gradients</p>
 
-        <p>i like this gradient</p>
-      </div>
-      <br />
-      <div>
-        <p>This page shows gradients</p>
+          <p>i like this gradient</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>This page shows gradients</p>
 
-        <p>i like this gradient</p>
-      </div>
-      <br />
-      <div>
-        <p>This page shows gradients</p>
+          <p>i like this gradient</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>This page shows gradients</p>
 
-        <p>i like this gradient</p>
-      </div>
-      <br />
-      <div>
-        <p>This page shows gradients</p>
+          <p>i like this gradient</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>This page shows gradients</p>
 
-        <p>i like this gradient</p>
-      </div>
-      <br />
-      <div>
-        <p>This page shows gradients</p>
+          <p>i like this gradient</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>This page shows gradients</p>
 
-        <p>i like this gradient</p>
-      </div>
-      <br />
-      <div>
-        <p>This page shows gradients</p>
+          <p>i like this gradient</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>This page shows gradients</p>
 
-        <p>i like this gradient</p>
-      </div>
-      <br />
-      <div>
-        <p>This page shows gradients</p>
+          <p>i like this gradient</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>This page shows gradients</p>
 
-        <p>i like this gradient</p>
-      </div>
-      <br />
-      <div>
-        <p>This page shows gradients</p>
+          <p>i like this gradient</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>This page shows gradients</p>
 
-        <p>i like this gradient</p>
-      </div>
-      <br />
-      <div>
-        <p>This page shows gradients</p>
+          <p>i like this gradient</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>This page shows gradients</p>
 
-        <p>i like this gradient</p>
-      </div>
-      <br />
-      <div>
-        <p>This page shows gradients</p>
+          <p>i like this gradient</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>This page shows gradients</p>
 
-        <p>i like this gradient</p>
-      </div>
-      <br />
-      <div>
-        <p>This page shows gradients</p>
-
-        <p>i like this gradient</p>
-      </div>
-      <br />
-      <div>
-        <p>This page shows gradients</p>
-
-        <p>i like this gradient</p>
-      </div>
-      <br />
-      <div>
-        <p>This page shows gradients</p>
-
-        <p>i like this gradient</p>
-      </div>
-      <br />
-      <div>
-        <p>This page shows gradients</p>
-
-        <p>i like this gradient</p>
-      </div>
-      <br />
-      <div>
-        <p>This page shows gradients</p>
-
-        <p>i like this gradient</p>
-      </div>
+          <p>i like this gradient</p>
+        </div>
+      </section>
 
       <a href="#top" id="back-to-top">
         Back <br />
