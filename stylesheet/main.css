@@ -1,6 +1,11 @@
 body {
-  background-color: #f5f5ff;
-  color: midnightblue;
+  background-image: url(https://wallpaperaccess.com/full/8053765.png);
+}
+
+nav {
+  padding: 10px;
+
+  background-color: #ffd194;
 }
 
 nav ul {
@@ -17,9 +22,8 @@ nav li {
   margin: 4px;
   border: 2px solid black;
   padding: 5px;
-
-  background-color: #191970;
-  color: #f5f5ff;
+  border: none;
+  background-color: #d1913c;
 
   -o-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
     transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out,
@@ -42,6 +46,14 @@ nav a:focus {
 }
 
 h1 {
+  padding: 10px;
+
+  font-weight: bold;
+  background-color: #f5f5ff;
+
+  color: #d1913c;
+  text-shadow: #212121 1.5cm;
+
   text-align: center;
   font-size: 40px;
 }
